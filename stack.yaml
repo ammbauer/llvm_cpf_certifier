@@ -1,0 +1,18 @@
+resolver: lts-13.20
+
+packages:
+- .
+
+extra-deps:
+  - llvm-hs-9.0.1
+  - llvm-hs-pure-9.0.0
+# - git: https://github.com/llvm-hs/llvm-hs/
+#   commit: b3a6fd0a7308ebf5fd820bc53106c7d8e98ea472
+#   subdirs:
+#     - llvm-hs
+#     - llvm-hs-pure
+
+# Override default flag values for local packages and extra-deps
+# flags: {}
+ghc-options:
+  "$locals": -XFlexibleInstances
